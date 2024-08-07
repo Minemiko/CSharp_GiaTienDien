@@ -65,7 +65,6 @@ namespace CSharp_GiaTienDien
                     SL++;
                 }
             } while (SD > 0 & SL < 50);
-            SL = 0;
             do
             {
                 if (SD > 0)
@@ -73,9 +72,8 @@ namespace CSharp_GiaTienDien
                     GT = 3151;
                     ST += GT;
                     SD--;
-                    SL++;
                 }
-            } while (SD > 0 & SL > 0);
+            } while (SD > 0);
             txtTong.Text = ST.ToString() + "đ";
         }
     }
